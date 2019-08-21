@@ -105,7 +105,8 @@ String makeResponse() {
   result += "Content-Type: text/html\n\n";
   result += "<!doctype html>\n";
   result += "<html><head><tile>";
-  result += "Hello from Arduino</title></head>\n";
+  result += "Hello from Arduino</title></head><br>\n";
+  result += "<meta http-equiv=\"refresh\" content=\"3\">";
   result += "\n <body> \n";
 
   for (int analogChannel = 0; analogChannel < 6; analogChannel++) {
